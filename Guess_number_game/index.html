@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    
+    <h1
+      style="
+        text-align: center;
+        color: white;
+        border: 2px solid Tomato;
+        background-color: dodgerblue;
+      "
+    >
+      Guess The Number
+    </h1>
+    <p style="text-align: center">
+      I'm thinking of a number between 1 and 100. Can you guess it?
+    </p>
+
+    <div style="text-align: center">
+      <input
+        min="1"
+        max="100"
+        type="number"
+        id="guessthenumber"
+        placeholder="Enter a number"
+        style="padding: 20px; font-size: 16px"
+        required
+      />
+
+      <button id="submit" type="button" style="padding: 10px; font-size: 16px">
+        Submit
+      </button>
+    </div>
+    <div id="result" style=" text-align: center; margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+
+
+    <p style="text-align: center; color: red">
+      You have 10 chances to guess the number
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
